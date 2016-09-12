@@ -1,12 +1,18 @@
 Rails.application.routes.draw do
   
+  resources :orders, only: [:index, :show, :create, :destroy]
+
+  resources :products
+  
+  get 'static_pages/landing_page'
+
   get 'static_pages/bijoux'
 
   get 'static_pages/laboutique'
 
   get 'static_pages/contact'
 
-  root 'static_pages#index'
+  root 'static_pages#landing_page'
 
   get 'static_pages/index'
 

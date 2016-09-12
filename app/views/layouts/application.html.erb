@@ -27,13 +27,14 @@
             <span class="icon-bar"></span>
           </button>
           <div class="projectName navbar-brand">
-              <a href="/static_pages/index">L'Argenterie</a>
+              <a href="/static_pages/landing_page">L'Argenterie</a>
           </div>  <!-- end projectName -->
         </div> <!--end navbar-header -->
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/static_pages/bijoux">Bijoux</a></li>
+            <li><a href="/static_pages/landing_page">Home</a></li>
+            <li><a href="/products">Bijoux</a></li>
             <li><a href="/static_pages/laboutique">La boutique</a></li>
             <li><a href="/static_pages/contact">Contact</a></li>
           </ul>
@@ -41,16 +42,22 @@
       </div> <!-- end nav container --> 
     </nav> <!-- end navbar --> 
 
+    <!-- Notice is for displaying the successful messages when clicking on edit and update a product -->
+    <p id="notice"><%= notice %></p>
+
     <%= yield %>
 
-  <footer>
-    <row class="bottom-line">
-      <div class="col-md-6">&copy L'Argenterie, 2016</div>
-      <div class="col-md-3"><a href="https://twitter.com/xavsln" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @xavsln</a>
-      </div>
-      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-    </row>
-  </footer>
+    <footer class="navbar-fixed-bottom">
+        <div class="col-md-12 down">
+          <p>&copy L'Argenterie, 2016 &#124
+            <a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0 class="icone-size"></a> &#124
+            <a target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0 class="icone-size"></a> &#124
+            <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0 class="icone-size">
+            </a>
+          </p>
+        </div><!-- END down -->
+
+    </footer>
 
   </body>
 </html>

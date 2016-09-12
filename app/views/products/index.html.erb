@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p><!-- XS TO CHECK WHAT HAPPENS IF DELETED -->
+
+<div class="container-fluid">
+
+  <h1>Nos bijoux</h1>
+
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9">  
+      <div class="fright">
+        <%= link_to 'New product', new_product_path, class: 'btn btn-default' %>
+      </div>
+    </div><!-- END col -->
+    <br><br>
+
+    <%= render @products %>
+
+  </div><!-- END row -->  
+
+</div><!-- END container-fluid -->
+
